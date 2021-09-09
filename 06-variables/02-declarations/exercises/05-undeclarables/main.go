@@ -26,10 +26,10 @@ package main
 // ---------------------------------------------------------
 
 func main() {
-	// var ? int
-	// var ? int
-	// var ? int
-	// var ? int
-	// var ? int
-	// var ? int
+	//var 3speed int
+	//var s?eed int
+	//var var int
+	//var func int
+	//var package int
+	//var func int
 }

@@ -17,5 +17,6 @@ package main
 //     use it
 // ---------------------------------------------------------
 
+var packageScope string
 func main() {
 }

@@ -8,6 +8,8 @@
 
 package main
 
+import "fmt"
+
 // ---------------------------------------------------------
 // EXERCISE: Declare string
 //
@@ -28,4 +30,7 @@ func main() {
 
 	// %T prints the type of the value
 	// %q prints an empty string
+	var s string
+	fmt.Println(s)
+	fmt.Printf("s (%T): %q\n", s, s)
 }
