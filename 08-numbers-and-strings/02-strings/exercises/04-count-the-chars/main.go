@@ -11,6 +11,7 @@ package main
 import (
 	"fmt"
 	"os"
+	"unicode/utf8"
 )
 
 // ---------------------------------------------------------
@@ -32,7 +33,15 @@ func main() {
 	// It should count the runes (codepoints) instead.
 	//
 	// When you run it with "İNANÇ", it should return 5 not 7.
+	var a = 'a'
+	fmt.Printf("%d is type %[1]T\n", a)
+	var b byte = 'b'
+	fmt.Printf("%d is type %[1]T\n", b)
+	fmt.Printf("%c ascii code is %d\n", b, b)
+	fmt.Printf("%c unicode is %U\n", b, b)
+	length_of_name := utf8.RuneCountInString(os.Args[1])
+	fmt.Println(length_of_name)
+	fmt.Println(len(os.Args[1]))
 
-	length := len(os.Args[1])
-	fmt.Println(length)
 }
+

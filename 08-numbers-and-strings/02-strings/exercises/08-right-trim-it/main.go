@@ -10,6 +10,7 @@ package main
 
 import (
 	"fmt"
+	"strings"
 )
 
 // ---------------------------------------------------------
@@ -33,5 +34,7 @@ func main() {
 	// it should print 5
 
 	name := "inanç           "
+	name = strings.TrimRight(name, " ")
+	fmt.Println(name)
 	fmt.Println(len(name))
 }

@@ -8,6 +8,11 @@
 
 package main
 
+import (
+	"fmt"
+	"strings"
+)
+
 // ---------------------------------------------------------
 // EXERCISE: ToLowercase
 //
@@ -28,4 +33,5 @@ package main
 // ---------------------------------------------------------
 
 func main() {
+	fmt.Println(strings.ToLower("SHEPARD"))
 }

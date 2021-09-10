@@ -8,6 +8,8 @@
 
 package main
 
+import "fmt"
+
 // ---------------------------------------------------------
 // EXERCISE: Do Some Calculations
 //
@@ -28,4 +30,10 @@ package main
 // ---------------------------------------------------------
 
 func main() {
+	fmt.Printf("The sum of 50 and 25 is %d.\n", 50+25)
+	fmt.Printf("The difference of 50 and 15.5 is %0.1f.\n", 50.0-15.5)
+	fmt.Printf("The product of 50 and 0.5 is %0.1f.\n", 50 * 0.5)
+	fmt.Printf("The quotient of 50 and 0.5 is %0.1f.\n", 50 / 0.5)
+	fmt.Printf("The remainder of 25 and 3 is %d.\n", 25 % 3)
+	fmt.Printf("The negation of `5+2` is %d.\n", -(5+2))
 }
